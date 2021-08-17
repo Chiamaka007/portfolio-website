@@ -1,6 +1,9 @@
 :root {
   --heading-font-family: "STIX Two Text", serif;
-  --default-font-faily: "Poppins", sans-serif;
+  --default-font-family: "Poppins", sans-serif;
+   --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 h1,
@@ -26,7 +29,8 @@ h3 {
   
 }
 .hero p {
-    font-family: var(--default-font-faily);
+    font-family: var(--default-font-family);
+    font-size: 24px;
 }
 .btn-branding {
 background: #6C63FF;
@@ -34,4 +38,23 @@ border-radius: 4px;
 color: #fff;
 padding: 18px 30px;
 margin-bottom: 100px;
+}
+.primary-link {
+  border-radius: 4px;
+  padding: 18px 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--box-shadow);
+  background: white;
+  color: var(--primary-color);
+}
+.app-description {
+  line-height: 30px;
+  margin-top: 70px;
+  font-family: var(--default-font-family);
+}
+.app-description h2 {
+  font-size: 60px;
+  font-weight: bolder;
 }
