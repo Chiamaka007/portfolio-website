@@ -18,14 +18,14 @@ h1 {
   font-size: 80px;
 }
 h3 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   margin-top: 150px;
 }
 .hero {
   text-align: center;
   background-color: #F9F7FE;
-  padding: 24px 60px;
+  padding: 160px 20px;
   
 }
 .hero p {
@@ -51,10 +51,32 @@ margin-bottom: 100px;
 }
 .app-description {
   line-height: 30px;
-  margin-top: 70px;
   font-family: var(--default-font-family);
+  padding: 120px 60px;
+  
 }
-.app-description h2 {
+h2 {
   font-size: 60px;
   font-weight: bolder;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 44px;
+    line-height: 2;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .app-description {
+    padding: 0;
+    text-align: center;
+  }
 }
