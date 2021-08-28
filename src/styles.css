@@ -2,9 +2,13 @@
   --heading-font-family: "STIX Two Text", serif;
   --default-font-family: "Poppins", sans-serif;
   --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --secondary-color: #EEEEEE;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+body {
+  background-color: #fff5f5; 
+}
+	
 
 h1,
 h2,
@@ -116,6 +120,9 @@ nav li.active a {
 }
 .img-projects {
   width: 400px;
+}
+.about-img {
+  max-width: 1000px;
 }
 @media (max-width: 900px) {
   h1 {
