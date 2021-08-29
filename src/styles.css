@@ -104,8 +104,10 @@ nav li.active a {
   margin-top: 100px;
   background-color: var(--secondary-color);
   padding: 60px 0 0 0;
-  
   border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
 }
 .mail-link {
   text-decoration: none;
