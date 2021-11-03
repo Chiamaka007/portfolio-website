@@ -45,6 +45,7 @@ nav ul {
   padding: 0;
   margin: 0;
 }
+
 nav a {
   text-decoration: none;
   color: var(--secondary-color);
@@ -56,15 +57,20 @@ nav li.active a {
   width: 100%;
   margin: 0;
 }
+nav .nav-logo {
+  color: var(--primary-color);
+}
 /* footer {
   background-color: #282323;
   margin: 0;
 } */
 .hero {
   text-align: center;
-  background-color: var(--background-color);
+  background-color: #181818;
   padding: 120px 20px;
+  margin-top: 40px;
 }
+
 .hero p {
   font-family: var(--default-font-family);
   font-size: 24px;
