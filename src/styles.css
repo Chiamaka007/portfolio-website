@@ -33,37 +33,83 @@ h3 {
   font-weight: bold;
   margin-top: 80px;
 }
-nav li {
-  list-style: none;
-  display: inline;
-  line-height: 42px;
-  margin-left: 20px;
-  font-family: var(--default-font-family);
-  font-weight: 500px;
-}
-nav ul {
-  padding: 0;
-  margin: 0;
+
+/* Nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
 }
 
-nav a {
+.logo {
+  font-size: 2rem;
+  color: var(--primary-color);
+  padding-left: 20px;
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: purple;
+}
+
+.nav__link {
+  position: fixed;
+  width: 94%;
+  top: 5rem;
+  left: 18px;
+  background-color: lightblue;
+}
+
+.nav__link a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+}
+.nav a {
   text-decoration: none;
-  color: var(--secondary-color);
+ 
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-nav a:hover,
-nav li.active a {
-  color: var(--primary-color);
-  padding: 0;
-  width: 100%;
-  margin: 0;
+.nav__link a:hover {
+  background-color: var(--primary-color);
 }
-nav .nav-logo {
-  color: var(--primary-color);
+
+.hide {
+  display: none;
 }
-/* footer {
-  background-color: #282323;
-  margin: 0;
-} */
+
+@media screen and (min-width: 600px) {
+  .nav__link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+
+  .nav__link a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+
 .hero {
   text-align: center;
   background-color: #181818;
@@ -142,6 +188,9 @@ nav .nav-logo {
   background-color: var(--primary-color);
 }
 
+.projects {
+  margin-top: 100px;
+}
 .img-projects {
   width: 400px;
 }
@@ -195,3 +244,4 @@ nav .nav-logo {
     font-size: 20px;
   }
 }
+
